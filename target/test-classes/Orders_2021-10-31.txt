@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+186,Zzzz Name,NY,3.00,Corrugate,100,1.75,2.10,1.75,175.00,210.00,38.50,423.50

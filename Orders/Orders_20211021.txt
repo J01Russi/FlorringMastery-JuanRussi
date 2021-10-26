@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+12,myname,NJ,3.25,Foam,100.00,1.75,2.10,1.75,175.00,210.00,12.51,397.51

@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.sg.flooringmasteryp.dao.OrdersDaoFileImplTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec <<< FAILURE!
+com.sg.flooringmasteryp.dao.OrdersDaoFileImplTest.testEditOrder()  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.ArithmeticException: Non-terminating decimal expansion; no exact representable decimal result.
+	at java.base/java.math.BigDecimal.divide(BigDecimal.java:1722)
+	at com.sg.flooringmasteryp.dao.OrdersDaoFileImplTest.testEditOrder(OrdersDaoFileImplTest.java:83)
+

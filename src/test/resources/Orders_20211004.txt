@@ -1,0 +1,4 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+197,Other Place,NJ,6.00,Laminate,100,1.75,2.10,1.75,1.75,1.75,1.75,1.75
+199,Test Company,FL,6.00,Tile,100,1.75,2.10,1.75,1.75,1.75,1.75,1.75
+204,Test Company,FL,6.00,Tile,100,1.75,2.10,1.75,1.75,1.75,175.00,210.00

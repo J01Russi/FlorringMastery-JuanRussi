@@ -1,0 +1,8 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+269,Zzzz Name,NY,3.00,Corrugate,100,1.75,2.10,1.75,1.75,1.75,1.75,1.75
+270,Test Company,FL,6.00,Tile,100,1.75,2.10,1.75,1.75,1.75,1.75,1.75
+272,The Name,CA,6.00,Foam,10,1.75,2.10,1.75,1.75,1.75,1.75,1.75
+273,Zzzz Name,NY,3.00,Corrugate,100,1.75,2.10,1.75,1.75,1.75,1.75,1.75
+274,Zzzz Name,NY,3.00,Corrugate,100,1.75,2.10,1.75,1.75,1.75,1.75,1.75
+275,The Name,CA,6.00,Foam,10,1.75,2.10,1.75,1.75,1.75,1.75,17.50
+276,Test Company,FL,6.00,Tile,100,1.75,2.10,1.75,1.75,1.75,175.00,210.00

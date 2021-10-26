@@ -1,0 +1,6 @@
+State,TaxRate
+NJ,6.25
+FL,2.75
+CA,5.75
+NY,3.00
+

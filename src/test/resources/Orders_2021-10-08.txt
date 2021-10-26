@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+187,The Name,CA,6.00,Foam,10,1.75,2.10,1.75,17.50,21.00,2.89,41.39

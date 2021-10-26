@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+8,Amazon,NJ,3.25,Carpet,100.00,2.25,2.10,2.25,225.00,210.00,14.14,449.14

@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+5,My Second Company,NY,3.00,Carpet,100.00,2.25,2.10,2.25,225.00,210.00,13.05,448.05

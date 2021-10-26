@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="5" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest" time="0.022" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.11+9"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Administrator\Downloads\FlooringMasteryP\FlooringMasteryP"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Administrator\Downloads\FlooringMasteryP\FlooringMasteryP"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.11+9"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\atom\bin;C:\Program Files\Azure Data Studio\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK-11.0.11+9"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder" time="0">
+    <failure message="ERROR: No Orders  exist on tha date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:79)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder(FMPServiceLImplTest.java:219)
+</failure>
+  </testcase>
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testEditOrder" time="0">
+    <failure message="ERROR: No Orders  exist on tha date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:79)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testEditOrder(FMPServiceLImplTest.java:203)
+</failure>
+  </testcase>
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrder" time="0">
+    <failure message="ERROR: No Orders  exist on tha date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:79)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrder(FMPServiceLImplTest.java:75)
+</failure>
+  </testcase>
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testAddOrder" time="0.004"/>
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders" time="0.001">
+    <failure message="ERROR: No Orders  exist on tha date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders(FMPServiceLImplTest.java:60)
+</failure>
+  </testcase>
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder" time="0.017">
+    <failure message="expected: &lt;com.sg.flooringmasteryp.dto.Order@7bd0ff20&gt; but was: &lt;com.sg.flooringmasteryp.dto.Order@fa406d31&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;com.sg.flooringmasteryp.dto.Order@7bd0ff20&gt; but was: &lt;com.sg.flooringmasteryp.dto.Order@fa406d31&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder(FMPServiceLImplTest.java:111)
+</failure>
+  </testcase>
+</testsuite>
