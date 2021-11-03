@@ -9,6 +9,8 @@
 package com.sg.flooringmasteryp.ui;
 
 import com.sg.flooringmasteryp.dto.Order;
+import com.sg.flooringmasteryp.dto.Product;
+import com.sg.flooringmasteryp.dto.State;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
@@ -24,6 +26,8 @@ public class View
 {
 
     private UserIO io;
+    private final String states = " NJ, FL, CA, NY";
+    private final String types = "Carpet, Foam, Tile, Wood, Corrugate";
     
     @Autowired
     public View(UserIO io)
@@ -98,8 +102,8 @@ public class View
 
     public LocalDate inputDate()
     {
-        return io.readDate("Please enter a date. (YYYY-mm-dd)",
-                LocalDate.of(2021, 10, 1), LocalDate.of(2025, 12, 31));
+        return io.readDate("Please enter a date (YYYY-mm-dd) it must be future date.",
+                LocalDate.of(2021, 10, 01), LocalDate.of(2025, 12, 31));
     }
 
     public BigDecimal inputArea()
@@ -199,8 +203,23 @@ public class View
 
     public Order editOrderInfo(Order o)
     {
-  
-        io.print("Customer:     \t" + o.getCustomerName());
+        BigDecimal zero = BigDecimal.ZERO;
+        
+        io.print("Leave Blank if not need to change it:");
+        System.out.println("\n");
+                
+        String customerName = io.readString("Change Customer Name To? ");
+        String state = io.readString("Change Location To? " + states);
+        String productType = io.readString("Change Product Type To? " + types);
+        //BigDecimal area = io.readBigDecimal("Change Area of Project?" + , 2, BigDecimal.ZERO);
+        
+        
+        
+        //io.print("Customer:     \t" + o.getCustomerName());
+        if (customerName.equals(""))
+        {
+            customerName = o.getCustomerName();
+        }
         o.setCustomerName(inputCustomerName());
 
         io.print("State:        \t" + o.getState());
@@ -245,6 +264,30 @@ public class View
             io.print("Order was not removed.");
             displayContinue();
         }
+    }
+    
+    public void displayAllProducts(List <Product> products) {
+        io.print("");
+        io.print("Product    Material Cost    Labour Cost");
+        io.print("Type       Per Sq. Ft.      Per Sq. Ft");
+        io.print("=========================================");
+        for (Product showProduct : products) {
+            io.print(showProduct.getProductType() + " "
+                    + " $" + showProduct.getMaterialCostSqFt()
+                    + " $" + showProduct.getLaborCostSqFt());
+        }
+    }
+    
+        public void displayAllStates(List<State> states) {
+        io.print("");
+        io.print("State      State");
+        io.print("Abbrev.    Tax ");
+        io.print("================");
+        for (State showState : states) {
+            io.print(showState.getState() + "     "
+                    + showState.getTaxRate());
+        }
+
     }
 
 }

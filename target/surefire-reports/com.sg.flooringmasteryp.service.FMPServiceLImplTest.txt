@@ -1,36 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: com.sg.flooringmasteryp.service.FMPServiceLImplTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec <<< FAILURE!
-com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder()  Time elapsed: 0 sec  <<< FAILURE!
-com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:79)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder(FMPServiceLImplTest.java:219)
-
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec <<< FAILURE!
 com.sg.flooringmasteryp.service.FMPServiceLImplTest.testEditOrder()  Time elapsed: 0 sec  <<< FAILURE!
-com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:79)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testEditOrder(FMPServiceLImplTest.java:203)
+com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No orders with that  number exist on that date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:91)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testEditOrder(FMPServiceLImplTest.java:204)
+
+com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder()  Time elapsed: 0 sec  <<< FAILURE!
+com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No orders with that  number exist on that date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:91)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder(FMPServiceLImplTest.java:220)
+
+com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder()  Time elapsed: 0.018 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.validateOrder(FMPServiceLImpl.java:248)
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.calculateOrder(FMPServiceLImpl.java:68)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder(FMPServiceLImplTest.java:112)
 
 com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrder()  Time elapsed: 0 sec  <<< FAILURE!
-com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:79)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrder(FMPServiceLImplTest.java:75)
+com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No orders with that  number exist on that date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:91)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrder(FMPServiceLImplTest.java:76)
 
-com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders()  Time elapsed: 0.001 sec  <<< FAILURE!
-com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders(FMPServiceLImplTest.java:60)
-
-com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder()  Time elapsed: 0.017 sec  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <com.sg.flooringmasteryp.dto.Order@7bd0ff20> but was: <com.sg.flooringmasteryp.dto.Order@fa406d31>
+com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <14> but was: <3>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder(FMPServiceLImplTest.java:111)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:152)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:147)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:327)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders(FMPServiceLImplTest.java:61)
 

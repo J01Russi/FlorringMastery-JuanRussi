@@ -14,6 +14,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 import org.springframework.stereotype.Component;
@@ -28,6 +29,7 @@ public class ProductsDaoFileImpl implements ProductsDao
     private static final String PRODUCTS_FILE = "Products.txt";
     private static final String DELIMITER = ",";
 
+    
     @Override
     public Product getProduct(String productType) throws
             DataPersistenceException
@@ -46,7 +48,8 @@ public class ProductsDaoFileImpl implements ProductsDao
         }
 
     }
-
+    
+    
     private List<Product> loadProducts() throws
             DataPersistenceException
     {
@@ -95,5 +98,6 @@ public class ProductsDaoFileImpl implements ProductsDao
             return null;
         }
     }
+
 
 }

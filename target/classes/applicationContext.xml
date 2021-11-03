@@ -23,19 +23,28 @@
         <constructor-arg ref="io"/>
     </bean>
 
-    <bean id="ordersDao" class="com.sg.flooringmasteryp.dao.OrdersDaoFileImpl"/>
-    <bean id="productsDao" class="com.sg.flooringmasteryp.dao.ProductsDaoFileImpl"/>
-    <bean id="statesDao" class="com.sg.flooringmasteryp.dao.StatesDaoFileImpl"/>
-    <bean id="auditDao" class="com.sg.flooringmasteryp.dao.AuditDaoFileImpl"/>
+    <bean id="ordersDao" 
+          class="com.sg.flooringmasteryp.dao.OrdersDaoFileImpl"/>
     
-    <bean id="service" class="com.sg.flooringmasteryp.service.FMPServiceLImpl">
+    <bean id="productsDao" 
+          class="com.sg.flooringmasteryp.dao.ProductsDaoFileImpl"/>
+    
+    <bean id="statesDao" 
+          class="com.sg.flooringmasteryp.dao.StatesDaoFileImpl"/>
+    
+    <bean id="auditDao" 
+          class="com.sg.flooringmasteryp.dao.AuditDaoFileImpl"/>
+    
+    <bean id="service" 
+          class="com.sg.flooringmasteryp.service.FMPServiceLImpl">
         <constructor-arg ref="ordersDao"/>
         <constructor-arg ref="productsDao"/>
         <constructor-arg ref="statesDao"/>
         <constructor-arg ref="auditDao"/>
     </bean>
     
-    <bean id="controller" class="com.sg.flooringmasteryp.controller.Controller">
+    <bean id="controller" 
+          class="com.sg.flooringmasteryp.controller.Controller">
         <constructor-arg ref="service"/>
         <constructor-arg ref="view"/>
     </bean>

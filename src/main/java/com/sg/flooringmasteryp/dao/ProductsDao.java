@@ -6,6 +6,7 @@
 package com.sg.flooringmasteryp.dao;
 
 import com.sg.flooringmasteryp.dto.Product;
+import java.util.List;
 
 /**
  *
@@ -15,4 +16,5 @@ public interface ProductsDao
 {
     Product getProduct(String productType) throws 
             DataPersistenceException;
+
 }

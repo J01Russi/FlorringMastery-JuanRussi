@@ -7,6 +7,8 @@ package com.sg.flooringmasteryp.service;
 
 import com.sg.flooringmasteryp.dao.DataPersistenceException;
 import com.sg.flooringmasteryp.dto.Order;
+import com.sg.flooringmasteryp.dto.Product;
+import com.sg.flooringmasteryp.dto.State;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -37,5 +39,15 @@ public interface FMPServiceL
 
     Order removeOrder(Order removedOrder) throws DataPersistenceException,
             InvalidOrderNumberException;
+    
+    Product getProduct(String productType) throws DataPersistenceException,
+            ProductValidationException;
+    
+   
+    State getState (String stateAbbString) throws DataPersistenceException,
+            StateValidationException;
+    
+    List <State> getAllStates() throws DataPersistenceException,
+            StateValidationException;
 
 }

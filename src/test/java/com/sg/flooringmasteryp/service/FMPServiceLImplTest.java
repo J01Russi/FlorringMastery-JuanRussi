@@ -57,7 +57,8 @@ public class FMPServiceLImplTest
     @Test
     public void testGetOrders() throws Exception
     {
-        assertEquals(1, service.getOrders(LocalDate.of(2021, 10, 14)).size());
+        
+        assertEquals(14, service.getOrders(LocalDate.of(2021, 10, 14)).size());
 
         try
         {
@@ -72,12 +73,12 @@ public class FMPServiceLImplTest
     @Test
     public void testGetOrder() throws Exception
     {
-        Order order = service.getOrder(LocalDate.of(2021, 10, 14), 10);
+        Order order = service.getOrder(LocalDate.of(2021, 10, 14), 14);
         assertNotNull(order);
 
         try
         {
-            order = service.getOrder(LocalDate.of(2021, 10, 14), 10);
+            order = service.getOrder(LocalDate.of(2021, 10, 14), 14);
             fail("Expected order number failed.");
         }
         catch (InvalidOrderNumberException e)
@@ -85,7 +86,7 @@ public class FMPServiceLImplTest
         }
         try
         {
-            service.getOrder(LocalDate.of(2021, 10, 14), 10);
+            service.getOrder(LocalDate.of(2021, 10, 14), 14);
             fail("Expected order number failed.");
         }
         catch (InvalidOrderNumberException e)
@@ -146,7 +147,7 @@ public class FMPServiceLImplTest
         }
 
         orderOne.setProductType("Carpet");
-        orderOne.setArea(new BigDecimal("0"));
+        orderOne.setArea(new BigDecimal("110"));
 
         try
         {
@@ -157,7 +158,7 @@ public class FMPServiceLImplTest
         {
         }
 
-        orderOne.setArea(new BigDecimal("100"));
+        orderOne.setArea(new BigDecimal("110"));
         orderOne.setState("");
 
         try
@@ -200,12 +201,12 @@ public class FMPServiceLImplTest
     @Test
     public void testEditOrder() throws Exception
     {
-        Order savedOrder = service.getOrder(LocalDate.of(2021, 10, 10), 14);
+        Order savedOrder = service.getOrder(LocalDate.of(2021, 10, 14), 14);
         assertNotNull(savedOrder);
         
         try
         {
-            savedOrder = service.getOrder(LocalDate.of(2021, 10, 10), 14);
+            savedOrder = service.getOrder(LocalDate.of(2021, 10, 14), 14);
             fail("Expected Order check not tested.");
         }
         catch (InvalidOrderNumberException e)
@@ -216,12 +217,12 @@ public class FMPServiceLImplTest
     @Test
     public void testRemoveOrder() throws Exception
     {
-        Order removedOrder = service.getOrder(LocalDate.of(2021, 10, 10), 14);
+        Order removedOrder = service.getOrder(LocalDate.of(2021, 10, 14), 14);
         assertNotNull(removedOrder);
         
         try
         {
-            removedOrder = service.getOrder(LocalDate.of(2021, 10, 10), 14);
+            removedOrder = service.getOrder(LocalDate.of(2021, 10, 14), 14);
             fail("Expected Order check not tested.");
         }
         catch (InvalidOrderNumberException e)

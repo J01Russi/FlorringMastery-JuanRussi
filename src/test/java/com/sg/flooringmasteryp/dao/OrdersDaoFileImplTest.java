@@ -30,7 +30,7 @@ public class OrdersDaoFileImplTest
     @Test
     public void testAddGetOrders() throws Exception
     {
-        LocalDate date = LocalDate.parse("20211020",
+        LocalDate date = LocalDate.parse("20211014",
         DateTimeFormatter.ofPattern("yyyyMMdd"));
         List<Order> initialOrders = ordersDao.getOrders(date);
 
@@ -64,7 +64,7 @@ public class OrdersDaoFileImplTest
     @Test
     public void testEditOrder() throws Exception
     {
-        LocalDate date = LocalDate.parse("20211020",
+        LocalDate date = LocalDate.parse("20211014",
             DateTimeFormatter.ofPattern("yyyyMMdd"));
 
         Order order = new Order();
@@ -80,7 +80,7 @@ public class OrdersDaoFileImplTest
                 .multiply(order.getArea()).setScale(2, RoundingMode.HALF_UP));
         order.setLaborCost(order.getLaborCostSqFt().multiply(order.getArea())
                 .setScale(2, RoundingMode.HALF_UP));
-        order.setTax(order.getTaxRate().divide(new BigDecimal("30.00"))
+        order.setTax(order.getTaxRate().divide(new BigDecimal("30.00"), 2, RoundingMode.HALF_UP)
                 .multiply((order.getMaterialCost().add(order.getLaborCost())))
                 .setScale(2, RoundingMode.HALF_UP));
         order.setTotal(order.getMaterialCost().add(order.getLaborCost())

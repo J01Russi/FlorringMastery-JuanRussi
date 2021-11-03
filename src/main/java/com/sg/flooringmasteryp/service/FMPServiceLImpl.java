@@ -19,7 +19,9 @@ import com.sg.flooringmasteryp.dto.State;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
+import java.time.Month;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  *
@@ -27,7 +29,7 @@ import java.util.List;
  */
 public class FMPServiceLImpl implements FMPServiceL
 {
-
+    @Autowired
     private OrdersDao ordersDao;
     private ProductsDao productsDao;
     private StatesDao statesDao;
@@ -240,6 +242,14 @@ public class FMPServiceLImpl implements FMPServiceL
     private void validateOrder(Order o) throws OrderValidationException
     {
         String message = "";
+        
+        LocalDate ldDate = o.getDate();
+        
+        if (ldDate.isBefore(LocalDate.now()) == true)
+        {
+            message += "Date must be future day.\n";
+        }
+        
         if (o.getCustomerName().trim().isEmpty() || o.getCustomerName() == null)
         {
             message += "Customer name is required.\n";
@@ -255,9 +265,9 @@ public class FMPServiceLImpl implements FMPServiceL
             message += "Product name is required.\n";
         }
 
-        if (o.getArea().compareTo(BigDecimal.ZERO) == 0 || o.getArea() == null)
+        if (o.getArea().compareTo(BigDecimal.ZERO) <= 99 || o.getArea() == null)
         {
-            message += "Area Square Footage is required.\n";
+            message += "Area Square Footage is required and it must be 100 sq or grather.\n";
         }
 
         if (!message.isEmpty())
@@ -265,6 +275,31 @@ public class FMPServiceLImpl implements FMPServiceL
             throw new OrderValidationException(message);
         }
 
+    }
+
+    @Override
+    public Product getProduct(String productType) throws DataPersistenceException, 
+            ProductValidationException
+    {
+        Product chosenProduct = productsDao.getProduct(productType);
+        if(chosenProduct == null)
+        {
+            throw new DataPersistenceException(productType + " is not an option from inventory. \n");
+        }
+        return chosenProduct;
+    }
+
+
+    @Override
+    public State getState(String stateAbbString) throws DataPersistenceException, StateValidationException
+    {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<State> getAllStates() throws DataPersistenceException, StateValidationException
+    {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

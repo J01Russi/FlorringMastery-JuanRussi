@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="5" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest" time="0.022" errors="0" skipped="0">
+<testsuite tests="6" failures="5" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest" time="0.018" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -64,42 +64,40 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder" time="0">
-    <failure message="ERROR: No Orders  exist on tha date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:79)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder(FMPServiceLImplTest.java:219)
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testEditOrder" time="0">
+    <failure message="ERROR: No orders with that  number exist on that date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No orders with that  number exist on that date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:91)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testEditOrder(FMPServiceLImplTest.java:204)
 </failure>
   </testcase>
-  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testEditOrder" time="0">
-    <failure message="ERROR: No Orders  exist on tha date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:79)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testEditOrder(FMPServiceLImplTest.java:203)
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder" time="0">
+    <failure message="ERROR: No orders with that  number exist on that date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No orders with that  number exist on that date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:91)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testRemoveOrder(FMPServiceLImplTest.java:220)
+</failure>
+  </testcase>
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder" time="0.018">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.validateOrder(FMPServiceLImpl.java:248)
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.calculateOrder(FMPServiceLImpl.java:68)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder(FMPServiceLImplTest.java:112)
 </failure>
   </testcase>
   <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrder" time="0">
-    <failure message="ERROR: No Orders  exist on tha date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:79)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrder(FMPServiceLImplTest.java:75)
+    <failure message="ERROR: No orders with that  number exist on that date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No orders with that  number exist on that date.
+	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrder(FMPServiceLImpl.java:91)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrder(FMPServiceLImplTest.java:76)
 </failure>
   </testcase>
-  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testAddOrder" time="0.004"/>
-  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders" time="0.001">
-    <failure message="ERROR: No Orders  exist on tha date." type="com.sg.flooringmasteryp.service.InvalidOrderNumberException">com.sg.flooringmasteryp.service.InvalidOrderNumberException: ERROR: No Orders  exist on tha date.
-	at com.sg.flooringmasteryp.service.FMPServiceLImpl.getOrders(FMPServiceLImpl.java:57)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders(FMPServiceLImplTest.java:60)
-</failure>
-  </testcase>
-  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder" time="0.017">
-    <failure message="expected: &lt;com.sg.flooringmasteryp.dto.Order@7bd0ff20&gt; but was: &lt;com.sg.flooringmasteryp.dto.Order@fa406d31&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;com.sg.flooringmasteryp.dto.Order@7bd0ff20&gt; but was: &lt;com.sg.flooringmasteryp.dto.Order@fa406d31&gt;
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testAddOrder" time="0"/>
+  <testcase classname="com.sg.flooringmasteryp.service.FMPServiceLImplTest" name="com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders" time="0">
+    <failure message="expected: &lt;14&gt; but was: &lt;3&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;14&gt; but was: &lt;3&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
-	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testCalculateOrder(FMPServiceLImplTest.java:111)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:152)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:147)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:327)
+	at com.sg.flooringmasteryp.service.FMPServiceLImplTest.testGetOrders(FMPServiceLImplTest.java:61)
 </failure>
   </testcase>
 </testsuite>

@@ -37,19 +37,19 @@ public class Order
     public int hashCode()
     {
         int hash = 3;
-        hash = 89 * hash + Objects.hashCode(this.date);
-        hash = 89 * hash + this.orderNumber;
-        hash = 89 * hash + Objects.hashCode(this.customerName);
-        hash = 89 * hash + Objects.hashCode(this.state);
-        hash = 89 * hash + Objects.hashCode(this.taxRate);
-        hash = 89 * hash + Objects.hashCode(this.productType);
-        hash = 89 * hash + Objects.hashCode(this.area);
-        hash = 89 * hash + Objects.hashCode(this.materialCostSqFt);
-        hash = 89 * hash + Objects.hashCode(this.laborCostSqFt);
-        hash = 89 * hash + Objects.hashCode(this.materialCost);
-        hash = 89 * hash + Objects.hashCode(this.laborCost);
-        hash = 89 * hash + Objects.hashCode(this.tax);
-        hash = 89 * hash + Objects.hashCode(this.total);
+        hash = 29 * hash + Objects.hashCode(this.date);
+        hash = 29 * hash + this.orderNumber;
+        hash = 29 * hash + Objects.hashCode(this.customerName);
+        hash = 29 * hash + Objects.hashCode(this.state);
+        hash = 29 * hash + Objects.hashCode(this.taxRate);
+        hash = 29 * hash + Objects.hashCode(this.productType);
+        hash = 29 * hash + Objects.hashCode(this.area);
+        hash = 29 * hash + Objects.hashCode(this.materialCostSqFt);
+        hash = 29 * hash + Objects.hashCode(this.laborCostSqFt);
+        hash = 29 * hash + Objects.hashCode(this.materialCost);
+        hash = 29 * hash + Objects.hashCode(this.laborCost);
+        hash = 29 * hash + Objects.hashCode(this.tax);
+        hash = 29 * hash + Objects.hashCode(this.total);
         return hash;
     }
 
